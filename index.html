@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day trader Telugu</title>
+    
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1222995969951335');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1222995969951335&ev=PageView&noscript=1"
+    /></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+        body {
+            background-color: #050a05;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-image: linear-gradient(rgba(51, 255, 51, 0.05) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(51, 255, 51, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+            overflow-x: hidden;
+            padding-bottom: 20px;
+        }
+
+        .ticker-wrap {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            border-bottom: 1px solid rgba(51, 255, 51, 0.3);
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+
+        .ticker {
+            display: inline-block;
+            white-space: nowrap;
+            color: #33ff33;
+            font-size: 11px;
+            font-weight: 600;
+            animation: marquee 25s linear infinite;
+        }
+
+        @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+
+        .main-content {
+            margin-top: 70px; /* Thoda kam kiya */
+            text-align: center;
+            width: 90%;
+            max-width: 420px;
+            z-index: 10;
+        }
+
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #33ff33;
+            box-shadow: 0 0 20px rgba(51, 255, 51, 0.6);
+            margin-bottom: 10px;
+        }
+
+        .channel-label {
+            background: rgba(51, 255, 51, 0.1);
+            color: #33ff33;
+            border: 1px solid rgba(51, 255, 51, 0.4);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 10px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            line-height: 1.2;
+            margin-bottom: 5px;
+        }
+
+        .sub-title {
+            color: #33ff33;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .description {
+            color: #aaa;
+            font-size: 13px;
+            line-height: 1.4;
+            margin: 10px 0 15px; /* Margin kam kiya button upar lane k liye */
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .stat-box {
+            background: #000;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 8px 4px;
+            border-radius: 8px;
+            font-size: 10px;
+        }
+
+        .up { color: #33ff33; font-weight: bold; }
+        .down { color: #ff4444; font-weight: bold; }
+
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            background: #111;
+            border: 1px solid rgba(51, 255, 51, 0.2);
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+        }
+
+        .join-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #33ff33;
+            color: #000;
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 19px;
+            text-transform: uppercase;
+            box-shadow: 0 0 25px rgba(51, 255, 51, 0.6);
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .ads-promo {
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+        }
+
+        .brand-name {
+            color: #00d2ff;
+            font-weight: 700;
+            text-decoration: underline;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ticker-wrap">
+        <div class="ticker">
+            ఉచిత ఛానెల్ • తెలుగు కమ్యూనిటీ • డైలీ అలర్ట్స్ • Day Trader TELUGU™️ • నిఫ్టీ కాల్స్ • బ్యాంక్ నిఫ్టీ • 
+        </div>
+    </div>
+
+    <div class="main-content">
+        <img src="logo.png" class="profile-pic" alt="Profile DP">
+
+        <div class="channel-label">● టెలిగ్రామ్ ఛానెల్ · ఉచితం</div>
+        
+        <h1>Day trader_<br>Telugu</h1>
+        <div class="sub-title">అఫీషియల్ ట్రేడర్™️</div>
+
+        <p class="description">
+            తెలుగు కమ్యూనిటీ కోసం నిపుణులైన స్టాక్ & ఆప్షన్స్ కాల్స్ — నిఫ్టీ, బ్యాంక్ నిఫ్టీ & ఇంట్రాడే టిప్స్, ప్రతిరోజూ టెలిగ్రామ్‌లో.
+        </p>
+
+        <div class="stats-grid">
+            <div class="stat-box">NIFTY <span class="up">23,842 ▲</span></div>
+            <div class="stat-box">BANKNIFTY <span class="up">51,204 ▲</span></div>
+            <div class="stat-box">SENSEX <span class="down">78,502 ▼</span></div>
+        </div>
+
+        <div class="tags-container">
+            <div class="tag">📈 ఇంట్రాడే</div>
+            <div class="tag">🎯 ఆప్షన్స్</div>
+            <div class="tag">💹 స్వింగ్</div>
+            <div class="tag">⚡ అలర్ట్స్</div>
+        </div>
+
+        <a href="https://t.me/+Fk1spp8qvi9mMTI1" class="join-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="24">
+            ఉచితంగా చేరండి
+        </a>
+
+        <a href="https://t.me/+jE7sEbzR23gwM2U1" class="ads-promo">
+            <span style="color:#fff; opacity:0.8">Meta ads setup k liye dm kro</span>
+            <span class="brand-name">Kunal Ads</span>
+        </a>
+    </div>
+
+</body>
+</html>
